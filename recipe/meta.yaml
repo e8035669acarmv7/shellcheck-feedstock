@@ -1,6 +1,6 @@
 {% set name = "shellcheck" %}
 {% set version = "0.6.0" %}
-{% set sha256 = "4e6c46751f031095f33f46ad4a4cf51c79fd2398031260132d6b57390a59d293" %}
+{% set sha256 = "78f90aa8e618dc468bc1c36b6929216dc7a0c2679cd157e50919f7d8cc1899bc" %}
 
 {% set native = 'm2w64-' if win else '' %}
 
