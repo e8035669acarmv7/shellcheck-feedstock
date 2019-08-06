@@ -17,13 +17,11 @@ STACK_OPTS="\
 --extra-lib-dirs ${PREFIX}/lib \
 --stack-root ${STACK_ROOT} "
 
-stack ${STACK_OPTS} setup
-
 if [[ $target_platform =~ linux.* ]]; then
-  stack ${STACK_OPTS} install --ghc-options \
-    "-optlo-Os -optl-L${PREFIX}/lib -optl-Wl,-rpath,${PREFIX}/lib,--gc-sections -split-sections -optl-pthread"
+  install shellcheck "$PREFIX/bin/shellcheck"
   strip --strip-all "$PREFIX/bin/shellcheck"
 else
+  stack ${STACK_OPTS} setup
   stack ${STACK_OPTS} install --ghc-options \
     "-optlo-Os -optl-L${PREFIX}/lib -optl-Wl,-rpath,${PREFIX}/lib"
   strip "$PREFIX/bin/shellcheck"
