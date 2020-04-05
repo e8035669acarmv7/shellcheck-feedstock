@@ -1,5 +1,5 @@
 {% set name = "shellcheck" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set native = 'm2w64-' if win else '' %}
 
 package:
@@ -7,10 +7,10 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://github.com/koalaman/{{ name }}/archive/v{{ version }}.tar.gz             # [not linux]
-    sha256: 946cf3421ffd418f0edc380d1184e4cb08c2ec7f098c79b1c8a2c482fe91d877              # [not linux]
+  - url: https://github.com/koalaman/{{ name }}/archive/v{{ version }}.tar.gz  # [not linux]
+    sha256: 50a219bde5c16fc0a40e2e3725b6c192ff589bc8a2569c32b62dcaece0495896  # [not linux]
   - url: https://storage.googleapis.com/shellcheck/shellcheck-stable.linux.x86_64.tar.xz  # [linux]
-    sha256: 092f8ece0bb8413c835f4ecc14c9f1157ebb44a36a216e3d617d1048ecdfce1b              # [linux]
+    sha256: 092f8ece0bb8413c835f4ecc14c9f1157ebb44a36a216e3d617d1048ecdfce1b  # [linux]
 
 build:
   number: 0
@@ -38,7 +38,7 @@ about:
   home: https://github.com/koalaman/shellcheck
   license: GPLv3
   license_family: GPL
-  license_file: LICENSE      # [not linux]
+  license_file: LICENSE  # [not linux]
   license_file: LICENSE.txt  # [linux]
   summary: ShellCheck, a static analysis tool for shell scripts
 
