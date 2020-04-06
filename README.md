@@ -3,7 +3,7 @@ About shellcheck
 
 Home: https://github.com/koalaman/shellcheck
 
-Package license: GPLv3
+Package license: GPL-3.0
 
 Feedstock license: BSD 3-Clause
 
