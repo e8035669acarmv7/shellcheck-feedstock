@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/koalaman/shellcheck
-  license: GPLv3
+  license: GPL-3.0
   license_family: GPL
   license_file: LICENSE  # [not linux]
   license_file: LICENSE.txt  # [linux]
